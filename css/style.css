@@ -1,0 +1,195 @@
+/* Start Variables */
+:root {
+  --main-color: #009688;
+}
+
+/* End Variables */
+/* Start Global Rules */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/* End Global Rules */
+/* Start Nav */
+.main-nav {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  height: 100px
+}
+
+.main-nav ul {
+  display: flex;
+  align-items: center;
+  margin-left: 150px;
+}
+
+.main-nav ul li {
+  padding-right: 30px;
+}
+
+.main-nav ul li:first-of-type {
+  padding-right: 10px;
+}
+
+.main-nav ul li:last-of-type {
+  position: relative;
+}
+
+.main-nav img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.main-nav .information {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.main-nav .bell {
+  font-size: 30px;
+}
+
+.notifications {
+  position: absolute;
+  top: -7px;
+  right: 15px;
+  width: 25px;
+  height: 25px;
+  background: var(--main-color);
+  color: white;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* End Nav */
+/* Start aside */
+.asidebar ul li {
+  margin-top: 35px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  font-weight: bold;
+  width: fit-content;
+}
+
+.asidebar ul li:nth-last-child(4) {
+  margin-top: 70px;
+}
+
+.asidebar ul li:nth-last-child(2) {
+  margin-top: 70px;
+}
+
+.asidebar ul .active {
+  background-color: #EFF1F5;
+  padding: 10px 20px 10px 2px;
+  border-radius: 16px;
+}
+
+.asidebar ul img {
+  height: 20px;
+  width: 20px;
+}
+
+/* End aside */
+/* Start payroll */
+.payroll {
+  height: calc(100vh - 100px) 100vh;
+  background-color: #EFF1F5;
+  position: relative;
+}
+.payroll .row {
+  margin-left: 10px;
+}
+.payroll .row:last-of-type {
+  padding-top: 30px;
+}
+.payroll .row:first-child {
+  margin-top: 35px;
+}
+
+.payroll .row >div {
+  background-color: white;
+  margin: 5px;
+  border-radius: 5%;
+  padding: 5px;
+  height:fit-content;
+  overflow: hidden;
+}
+
+.payroll select {
+  border: none;
+  width: 150px;
+  background-color: white;
+  color: #9BA3A7;
+}
+
+.payroll .row > div>span {
+  display: block;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.payroll table td:not(:last-child) {
+  padding: 10px;
+  border-right: #9BA3A7 solid 1px ;
+}
+.payroll .row:last-of-type h4 {
+  padding: 10px 0 30px 10px;
+}
+.payroll input {
+  color: black;
+  text-align: center;
+  padding: 5px 10px;
+  border-radius: 16px;
+  width: 150px;
+}
+.payroll button {
+  padding: 7px 15px;
+  border-radius: 16px;
+  background-color: var(--main-color);
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.payroll .date input {
+width: 70px;
+}
+.payroll  label {
+  margin-left:15px;
+  color:#9BA3A7 ;
+  font-weight: bold;
+  }
+  .butt {
+    position: absolute;
+    bottom: 150px;
+    right: 175px;
+    width: 250px;
+  }
+/* End payroll */

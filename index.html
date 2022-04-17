@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Render All Elements Normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Grid CSS File -->
+    <link rel="stylesheet" href="css/bootstrap-grid.css" />
+    <!-- Main Template CSS File -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="main-nav row">
+        <ul>
+          <li><img src="imgs/nav.jpg" alt="photo" /></li>
+          <li class="information">
+            <span>Muhammed Ahmed</span>
+            <span>HR Manager</span>
+          </li>
+          <li>
+            <a href="#"><i class="bell fa-regular fa-bell"></i></a>
+            <span class="notifications">99</span>
+          </li>
+        </ul>
+      </div>
+      <div class="asidebar row">
+        <ul class="col-2">
+          <li>
+            <img src="imgs/dashboard.png" alt="dashboard" /><a href="#">
+              Dashboard</a
+            >
+          </li>
+          <li>
+            <img src="imgs/employees.png" alt="employees" /><a href="#">
+              Employees</a
+            >
+          </li>
+          <li>
+            <img src="imgs/requests.png" alt="requests" /><a href="#">
+              Requests</a
+            >
+          </li>
+          <li>
+            <img src="imgs/time.png" alt="time" /><a href="#"> Time sheet</a>
+          </li>
+          <li>
+            <img src="imgs/payroll.png" alt="payroll" /><a href="#"> Payroll</a>
+          </li>
+          <li class="active">
+            <img src="imgs/transaction.png" alt="transaction" /><a href="#">
+              TRANSACTION
+            </a>
+          </li>
+          <li>
+            <img src="imgs/reports.png" alt="reports" /><a href="#"> Reports</a>
+          </li>
+          <li>
+            <img src="imgs/sitting.png" alt="sitting" /><a href="#"> SETTING</a>
+          </li>
+        </ul>
+
+        <div class="col payroll">
+          <div class="row">
+            <div class="col-3 d-flex justify-content-around align-items-center">
+              <input type="text" placeholder="Search" />
+              <button>ADD</button>
+            </div>
+            <div class="col-2">
+              <select name="" id="">
+                <option value="all">Department</option>
+              </select>
+              <span>All</span>
+            </div>
+            <div class="col-2">
+              <select name="" id="">
+                <option value="all">Job title</option>
+              </select>
+              <span>All</span>
+            </div>
+            <div class="col-2">
+              <select name="" id="">
+                <option value="all">nationality</option>
+              </select>
+              <span>All</span>
+            </div>
+            <div class="col-2">
+              <select name="" id="">
+                <option value="all">Line Manager</option>
+              </select>
+              <span>All</span>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              class="col-3 d-flex justify-content-between date align-items-end"
+            >
+              <div>
+                <label for="">From</label>
+                <input type="number" />
+              </div>
+              <div>
+                <label for="">To</label>
+                <input type="number" />
+              </div>
+              <button>ADD</button>
+            </div>
+            <div class="col-2">
+              <select name="" id="">
+                <option value="all">after date</option>
+              </select>
+              <span>All</span>
+            </div>
+            <div class="col-2">
+              <select name="" id="">
+                <option value="all">rejoined from leave</option>
+              </select>
+              <span>All</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <h4>Calculate Salaries For :</h4>
+              <table>
+                <tr>
+                  <td>1</td>
+                  <td>1234567</td>
+                  <td>Abdulrahim Alzahrani</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>1234567</td>
+                  <td>Abdulrahim Alzahrani</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>1234567</td>
+                  <td>Abdulrahim Alzahrani</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>1234567</td>
+                  <td>Abdulrahim Alzahrani</td>
+                </tr>
+              </table>
+            </div>
+            <div style="background-color: transparent" class="col-2"></div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <label>FROM</label>
+              <input type="date" name="" id="" />
+            </div>
+            <div
+              class="d-flex flex-column justify-content-center align-items-center"
+            >
+              <label>TO</label>
+              <input type="date" name="" id="" />
+            </div>
+            <button class="butt">ADD</button>
+          </div>
+        </div>
+        <div class="col-1"></div>
+      </div>
+    </div>
+  </body>
+</html>
